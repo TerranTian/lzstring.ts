@@ -1,0 +1,35 @@
+{
+  "name": "lzstring.ts",
+  "version": "2.0.0",
+  "license": "MIT",
+  "description": "ts version",
+  "scripts": {
+    "prepublish": "npm run build",
+    "start": "node build/LZString.js",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^7.10.8"
+  },
+  "bundleDependencies": [],
+  "main": "build/LZString.js",
+  "types": "build/LZString.d.js",
+  "bin": {
+    "lzstring":"node build/bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TerranTian/behavior.ts.git"
+  },
+  "author": "terran.tian",
+  "bugs": {
+    "url": "https://github.com/TerranTian/behavior.ts/issues"
+  },
+  "homepage": "https://github.com/TerranTian/behavior.ts#readme",
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "files": [
+    "build/**/*"
+  ]
+}
