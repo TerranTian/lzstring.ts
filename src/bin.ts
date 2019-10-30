@@ -6,9 +6,8 @@ let path = require("path");
 let fs = require("fs");
 let dir = path.dirname(process.argv[1]);
 let action = process.argv[2];
-let parameters = process.argv.splice(3);
-
-if (process.argv.length < 4) {
+let parameters = process.argv.splice(3) || [];
+if (parameters.length == 0) {
   console.error(`
   Usage: lz-string action <input_file>
   action:
