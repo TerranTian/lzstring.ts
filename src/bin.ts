@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import { LZString } from "./LZString";
 
 let path = require("path");
