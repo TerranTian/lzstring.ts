@@ -11,13 +11,18 @@ if (parameters.length == 0) {
   console.error(`
   Usage: lz-string action <input_file>
   action:
+    compressToBase64
     decompressFromBase64
+    
     compressToUTF16
     decompressFromUTF16
+    
     compressToUint8Array
     decompressFromUint8Array
+    
     compressToEncodedURIComponent
     decompressFromEncodedURIComponent
+    
     compress
     decompress
   `);
